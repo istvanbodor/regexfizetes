@@ -3,11 +3,11 @@ document.addEventListener("DOMContentLoaded", () => {
     var _a;
     (_a = document.getElementById("fizetes")) === null || _a === void 0 ? void 0 : _a.addEventListener("click", () => {
         var _a, _b, _c, _d, _e, _f, _g, _h;
-        let nevellenorzo = /^[a-z]{1,}$/;
+        let nevellenorzo = /* /^[a-z]{1,}$/ */ /^\p{L}{1,}$/gu;
         let nev = (_a = document.getElementById('nev')) === null || _a === void 0 ? void 0 : _a.value;
-        let orszagellenorzo = /^[a-z]{1,}$/;
+        let orszagellenorzo = /^\p{L}{1,}$/gu;
         let orszag = (_b = document.getElementById('orszag')) === null || _b === void 0 ? void 0 : _b.value;
-        let varosellenorzo = /^[a-z]{1,}$/;
+        let varosellenorzo = /^\p{L}{1,}$/gu;
         let varos = (_c = document.getElementById('varos')) === null || _c === void 0 ? void 0 : _c.value;
         let utcaellenorzo = /^[a-z 0-9]{1,}$/;
         let utca = (_d = document.getElementById('utca')) === null || _d === void 0 ? void 0 : _d.value;

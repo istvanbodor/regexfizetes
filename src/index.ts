@@ -3,13 +3,13 @@ document.addEventListener("DOMContentLoaded", ()=> {
         document.getElementById("fizetes")?.addEventListener("click", ()=>{
 
 
-                let nevellenorzo = /^[a-z]{1,}$/
+                let nevellenorzo =   /* /^[a-z]{1,}$/ */ /^\p{L}{1,}$/gu;
                 let nev : string= (document.getElementById('nev') as HTMLInputElement)?.value;
 
-                let orszagellenorzo = /^[a-z]{1,}$/
+                let orszagellenorzo = /^\p{L}{1,}$/gu;
                 let orszag : string= (document.getElementById('orszag') as HTMLInputElement)?.value;
                 
-                let varosellenorzo = /^[a-z]{1,}$/
+                let varosellenorzo = /^\p{L}{1,}$/gu;
                 let varos : string= (document.getElementById('varos') as HTMLInputElement)?.value;
 
                 let utcaellenorzo = /^[a-z 0-9]{1,}$/
