@@ -17,7 +17,7 @@ document.addEventListener("DOMContentLoaded", () => {
         let kartya = (_f = document.getElementById('kartya')) === null || _f === void 0 ? void 0 : _f.value;
         let cvcellenorzo = /^[0-9]{3}$/;
         let cvc = (_g = document.getElementById('cvc')) === null || _g === void 0 ? void 0 : _g.value;
-        let kartyanevellenorzo = /^[a-zA-Z" "]$/;
+        let kartyanevellenorzo = /^[a-zA-Z" "]{1,}$/;
         let kartyanev = (_h = document.getElementById('kartyanev')) === null || _h === void 0 ? void 0 : _h.value;
         if (!nevellenorzo.test(nev)) {
             document.getElementById('hiba').textContent = "A név mező helytelen";

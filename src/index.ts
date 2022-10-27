@@ -24,7 +24,7 @@ document.addEventListener("DOMContentLoaded", ()=> {
                 let cvcellenorzo = /^[0-9]{3}$/
                 let cvc : string= (document.getElementById('cvc') as HTMLInputElement)?.value;
 
-                let kartyanevellenorzo = /^[a-zA-Z" "]$/
+                let kartyanevellenorzo = /^[a-zA-Z" "]{1,}$/
                 let kartyanev : string= (document.getElementById('kartyanev') as HTMLInputElement)?.value;
                 
                 if (!nevellenorzo.test(nev)){
